@@ -15,8 +15,8 @@ Libraries required: Jetson-Inference, Python3
 ``` $ cd jetson-inference/python/training/classification ```
 3. Put the model into the classification/weeds/models folder (might have to create a new folder named 'weeds' and the image folder in the classification/data folder
 4. Set the variables
-``` $ NET=models/weeds ```
-``` $ DATASET=data/weeds ```
+``` $ NET=models/weedsmodel ```
+``` $ DATASET=data/weedsdata ```
 5. Run this command to generate an image.
 ``` $ imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/weed/182.jpg weed1.jpg ```
 6. View the generated image in the classification folder.
