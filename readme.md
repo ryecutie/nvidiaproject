@@ -10,6 +10,7 @@ The model is a re-trained ResNet-18 model that uses imagenet to identify if it i
 
 Libraries required: Jetson-Inference, Python3
 1. Download both the resnet18.onnx and data image folder
+- http://www.mediafire.com/folder/5fyo648mdeuwe,x1ekxxy7a9xcw/shared
 2. After opening the nano, go to the classification directory
 ``` $ cd jetson-inference/python/training/classification ```
 3. Put the model into the classification/weeds/models folder (might have to create a new folder named 'weeds' and the image folder in the classification/data folder
