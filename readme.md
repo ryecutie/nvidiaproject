@@ -1,6 +1,6 @@
 # Crop Weed Identification 
 
-This project servers the purpose of identifying weeds amongst crops (in this case, potato crops). This is proof of concept as while a small dataset is used, the dataset could be expanded to have more examples and more categories. The idea of identifying weeds could be extremely useful in everyday gardening as it is a hassle to pick out weeds among crops.
+This project servers the purpose of identifying weeds amongst crops (in this case, potato crops). This is proof of concept as while a small dataset is used, the dataset could be expanded to have more examples and more categories. Due to the limited data and close images, this isnt perfect. The idea of identifying weeds could be extremely useful in everyday gardening as it is a hassle to pick out weeds among crops.
 
 ## The Algorithm
 
@@ -16,7 +16,7 @@ Libraries required: Jetson-Inference, Python3
 ``` $ NET=models/weed ```
 ``` $ DATASET=data/weed ```
 5. Run this command to generate an image.
-``` $ imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/potato/138.jpg crop1.jpg ```
+``` $ imagenet.py --model=$NET/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=$DATASET/labels.txt $DATASET/test/weed/182.jpg weed1.jpg ```
 6. View the generated image in the classification folder. - Alternatively, the result could be viewed in the terminal
 
 [View a video explanation here](video link)
